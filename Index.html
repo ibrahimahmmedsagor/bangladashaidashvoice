@@ -1,1 +1,15 @@
-
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bangla AI Voice</title>
+</head>
+<body>
+<h1>বাংলা AI Voice</h1>
+<p>বাংলা লেখা থেকে কণ্ঠ তৈরি করুন</p>
+<textarea id="txt" placeholder="এখানে বাংলা লিখুন"></textarea>
+<br><br>
+<button onclick="speechSynthesis.speak(new SpeechSynthesisUtterance(document.getElementById('txt').value))">শুনুন</button>
+</body>
+</html>
